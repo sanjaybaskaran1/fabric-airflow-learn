@@ -1,0 +1,11 @@
+CREATE TABLE [RAW_SCHEMA].[CUSTOMERS] (
+    [CUSTOMER_ID]   INT           NOT NULL,
+    [CUSTOMER_NAME] VARCHAR (100) NULL,
+    [EMAIL]         VARCHAR (150) NULL,
+    [CITY]          VARCHAR (100) NULL,
+    [COUNTRY]       VARCHAR (100) NULL,
+    [CREATED_DATE]  DATE          NULL
+);
+
+
+GO
