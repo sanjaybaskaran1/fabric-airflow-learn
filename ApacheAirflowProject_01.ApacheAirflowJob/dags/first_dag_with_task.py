@@ -1,15 +1,18 @@
 from datetime import datetime
-from airflow import DAG
 from airflow.decorators import dag, task
-from airflow.operators.bash import BashOperator
 
 #================dag decorator====================
-@dag(dag_id='first_dag') #name of the dag
+@dag(
+    dag_id="first_dag",
+    start_date=datetime(2026, 11, 1),
+    schedule=None,
+    catchup=False,
+)
 def first_dag():
 
     @task.python
     def first_task():
-        print("this is the first task")
+        print("this is the first tasking")
 
     @task.python
     def second_task():
