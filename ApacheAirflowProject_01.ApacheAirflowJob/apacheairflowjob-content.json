@@ -9,8 +9,19 @@
         "airflowVersion": "2.10.5",
         "enableAADIntegration": true,
         "enableTriggerers": false,
-        "environmentVariables": {},
-        "pythonVersion": "3.12"
+        "environmentVariables": {
+          "AIRFLOW__SMTP__SMTP_HOST": "smtp.gmail.com",
+          "AIRFLOW__SMTP__SMTP_MAIL_FROM": "baskaransanjay8@gmail.com",
+          "AIRFLOW__SMTP__SMTP_PASSWORD": "nhst ugan ulko vdwy",
+          "AIRFLOW__SMTP__SMTP_PORT": "587",
+          "AIRFLOW__SMTP__SMTP_SSL": "False",
+          "AIRFLOW__SMTP__SMTP_STARTTLS": "True",
+          "AIRFLOW__SMTP__SMTP_USER": "baskaransanjay8@gmail.com"
+        },
+        "libraryVariables": {},
+        "packageProviderPath": "plugins",
+        "pythonVersion": "3.12",
+        "secrets": []
       },
       "computeProperties": {
         "computePool": "StarterPool",
